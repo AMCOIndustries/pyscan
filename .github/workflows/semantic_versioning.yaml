@@ -8,7 +8,7 @@ on:
 
   
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     concurrency: release
     permissions:
@@ -21,8 +21,20 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.AMM }}
 
-
-    - name: Python Semantic Release
-      uses: python-semantic-release/python-semantic-release@master
+    # Autoversioning and updating changelog:
+    - name: Conventional Changelog Action
+      id: changelog
+      uses: TriPSs/conventional-changelog-action@v3.7.1
       with:
-        github_token: ${{ secrets.AMM }}
+        github-token: ${{ secrets.AMM }}
+        
+
+    # - name: Create Release
+    #   uses: actions/create-release@v1
+    #   if: ${{ steps.changelog.outputs.skipped == 'false' }}
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ steps.changelog.outputs.tag }}
+    #     release_name: ${{ steps.changelog.outputs.tag }}
+    #     body: ${{ steps.changelog.outputs.clean_changelog }}
