@@ -27,7 +27,7 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v3.7.1
       with:
         github-token: ${{ secrets.AMM }}
-        
+        version-file: './VERSION.json'
 
     # - name: Create Release
     #   uses: actions/create-release@v1
