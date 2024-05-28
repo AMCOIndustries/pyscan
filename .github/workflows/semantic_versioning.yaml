@@ -1,9 +1,10 @@
 name: Semantic Release
 
 on:
-  push:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
     branches:
-      - main
+        - main
   workflow_dispatch:
 
   
@@ -27,8 +28,19 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v3.7.1
       with:
         github-token: ${{ secrets.AMM }}
+        git-message: 'chore(release): {version}'
+        git-user-name: 'Awesome Changelog Action'
+        git-user-email: 'awesome_changelog@github.actions.com'
+        preset: 'angular'
+        tag-prefix: 'v'
+        output-file: 'MY_CUSTOM_CHANGELOG.md'
+        release-count: '10'
         version-file: './VERSION.json'
-
+        version-path: './'
+        skip-on-empty: 'false'
+        skip-version-file: 'false'
+        skip-commit: 'false'
+        git-branch: 'my-maintenance-branch'
     # - name: Create Release
     #   uses: actions/create-release@v1
     #   if: ${{ steps.changelog.outputs.skipped == 'false' }}
