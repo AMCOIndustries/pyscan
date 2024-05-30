@@ -31,5 +31,3 @@ jobs:
         version-file: 'VERSION.json'
         skip-on-empty: false
         skip-tag: 'true'
-        git-user-name: 'ammounce'
-        git-user-email: 'ammounce@gmail.com'
