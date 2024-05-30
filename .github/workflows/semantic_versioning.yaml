@@ -28,3 +28,4 @@ jobs:
       with:
         github-token: ${{ secrets.AMM }}
         version-file: 'VERSION.json'
+        skip-on-empty: false
