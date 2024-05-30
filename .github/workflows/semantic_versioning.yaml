@@ -27,9 +27,3 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v5.2.1
       with:
         github-token: ${{ secrets.AMM }}
-        git-user-name: 'ammounce'
-        git-user-email: 'ammounce@gmail.com'
-        preset: 'angular'
-        tag-prefix: 'v'
-        version-file: "VERSION.json"
-        git-branch: 'main'
