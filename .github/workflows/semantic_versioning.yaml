@@ -22,32 +22,14 @@ jobs:
       with:
           fetch-depth: 0
 
-    # # insert your credentials here, and be sure to replace REPO_TOKEN_SECRET with your secret (limit token to repo permissions)
-    # - name: Set Force-Push Credentials
-    #   run: |
-    #     git config --global user.name "ammounce"
-    #     git config --global user.email "amounce@sandia.gov"
-    #     git remote set-url origin https://${{ secrets.AMM }}@github.com/${{ github.repository }}
-
-    # and the token again here instead of github_token
     - name: Conventional Changelog Action
       id: changelog
       uses: TriPSs/conventional-changelog-action@v5.2.1
       with:
         github-token: ${{ secrets.AMM }}
-        git-user-name: 'auto-andy'
+        git-user-name: 'ammounce'
         git-user-email: 'ammounce@gmail.com'
         preset: 'angular'
         tag-prefix: 'v'
         version-file: "VERSION.json"
-        skip-on-empty: 'true'
         git-branch: ${{ github.event.pull_request.head.ref }}
-    # # this shouldn't need your token, but might as well include here instead of github_token as well.
-    # - name: Create Release
-    #   uses: actions/create-release@v1
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.AMM }}
-    #   with:
-    #     tag_name: ${{ steps.changelog.outputs.tag }}
-    #     release_name: ${{ steps.changelog.outputs.tag }}
-    #     body: ${{ steps.changelog.outputs.clean_changelog }}
