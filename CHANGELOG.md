@@ -1,4 +1,8 @@
-# 0.7.0 (2024-05-30)
+## [0.7.1](https://github.com/AMCOIndustries/pyscan/compare/v0.7.0...v0.7.1) (2024-05-30)
+
+
+
+# [0.7.0](https://github.com/AMCOIndustries/pyscan/compare/b4ad18b3c1e805d6a3ecbdddddb5a55a0fcd1502...v0.7.0) (2024-05-30)
 
 
 ### Bug Fixes
