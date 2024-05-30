@@ -13,11 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  release:
-    # not positive this if statement works, but included as a placeholder since we only want workflow dispatch to run on main.
-    # you could also consider creating an evironment to enforce this which may be better practices,
-    # but is more complicated than I'm willing to take on right now.
-    if: github.ref == 'refs/heads/main'
+  version:
     runs-on: ubuntu-latest
 
     steps:
