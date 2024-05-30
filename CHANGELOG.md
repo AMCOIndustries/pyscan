@@ -1,9 +1,19 @@
+## [0.7.3](https://github.com/AMCOIndustries/pyscan/compare/v0.7.2...v0.7.3) (2024-05-30)
+
+
+### Bug Fixes
+
+* test release ([1d8b313](https://github.com/AMCOIndustries/pyscan/commit/1d8b313514af6b06ac05d56cb9a48ee7fe347459))
+
+
+
 ## [0.7.2](https://github.com/AMCOIndustries/pyscan/compare/v0.7.1...v0.7.2) (2024-05-30)
 
 
 ### Bug Fixes
 
 * Update README.md ([766442a](https://github.com/AMCOIndustries/pyscan/commit/766442af31380bc9b61a3b1017e321b3c3eece2b))
+* Update README.md [skip ci] ([89ae2e9](https://github.com/AMCOIndustries/pyscan/commit/89ae2e97c61663122ed6b455b5dbc46942a09e2e))
 
 
 
