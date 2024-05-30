@@ -46,7 +46,7 @@ jobs:
         tag-prefix: 'v'
         version-file: "VERSION.json"
         git-branch: 'main'
-
+        skip-on-empty: 'true'
     # # this shouldn't need your token, but might as well include here instead of github_token as well.
     # - name: Create Release
     #   uses: actions/create-release@v1
