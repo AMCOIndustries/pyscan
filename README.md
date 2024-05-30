@@ -1,6 +1,6 @@
 # Pyscan
 
-Python scientific measurement toolbox, changed, again, again, again
+Python scientific measurement toolbox, changed, again, again, again, changes
 
 ## Intro
 
