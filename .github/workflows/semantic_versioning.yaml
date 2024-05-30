@@ -31,4 +31,5 @@ jobs:
         version-file: 'VERSION.json'
         skip-on-empty: false
         skip-tag: 'true'
+        release-count: 0
         git-message: ${{ github.event.head_commit.message }}
