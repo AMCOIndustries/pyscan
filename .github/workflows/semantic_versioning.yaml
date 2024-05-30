@@ -30,4 +30,4 @@ jobs:
         version-file: 'VERSION.json'
         skip-on-empty: false
         git-user-name: 'ammounce'
-        git-user-email: 'ammounce@gmail.com
+        git-user-email: 'ammounce@gmail.com'
