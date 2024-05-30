@@ -16,16 +16,11 @@ jobs:
   version:
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Set Force-Push Credentials
-      run: |
-        git config --global user.name "ammounce"
-        git config --global user.email "ammounce@gmail.gov"
-        git remote set-url origin https://${{ secrets.AMM }}@github.com/${{ github.repository }}
-    
+    steps:    
     - name: Git checkout
       uses: actions/checkout@v4
       with:
+          token: ${{ secrets.MY_SECRET_NAME }}
           fetch-depth: 0
 
     - name: Conventional Changelog Action
