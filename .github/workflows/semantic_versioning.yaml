@@ -17,6 +17,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set Force-Push Credentials
+      run: |
+        git config --global user.name "ammounce"
+        git config --global user.email "ammounce@gmail.gov"
+        git remote set-url origin https://${{ secrets.REPO_TOKEN_SECRET }}@github.com/${{ github.repository }}
+    
     - name: Git checkout
       uses: actions/checkout@v4
       with:
