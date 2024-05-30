@@ -1,3 +1,7 @@
+## [0.3.2](https://github.com/AMCOIndustries/pyscan/compare/v0.3.1...v0.3.2) (2024-05-30)
+
+
+
 ## [0.3.1](https://github.com/AMCOIndustries/pyscan/compare/v0.1.0...v0.3.1) (2024-05-30)
 
 
