@@ -1,16 +1,4 @@
-## [0.3.3](https://github.com/AMCOIndustries/pyscan/compare/v0.3.2...v0.3.3) (2024-05-30)
-
-
-
-## [0.3.2](https://github.com/AMCOIndustries/pyscan/compare/v0.3.1...v0.3.2) (2024-05-30)
-
-
-
-## [0.3.1](https://github.com/AMCOIndustries/pyscan/compare/v0.1.0...v0.3.1) (2024-05-30)
-
-
-
-# [0.1.0](https://github.com/AMCOIndustries/pyscan/compare/b4ad18b3c1e805d6a3ecbdddddb5a55a0fcd1502...v0.1.0) (2024-05-28)
+# 0.4.0 (2024-05-30)
 
 
 ### Bug Fixes
@@ -65,6 +53,7 @@
 * added get_version function to pyscan/general, implemented it in runfinfo, and also created a basic test file to ensure it works as expected. ([0e9fd49](https://github.com/AMCOIndustries/pyscan/commit/0e9fd49e3720c392368e9efa44c1a6f9d7ba85f8))
 * added new workflow for testing versioning temporarily. ([2fdd155](https://github.com/AMCOIndustries/pyscan/commit/2fdd155d3eb90dff372467fe025b7ffdd08852d8))
 * added workflow dispatch for ultimate versioning solution to temporarily test. ([842fecd](https://github.com/AMCOIndustries/pyscan/commit/842fecd446a443cfdcc023d95ccd1e8260b8c361))
+* Update semantic_versioning.yaml ([b555025](https://github.com/AMCOIndustries/pyscan/commit/b55502595b0390e6d9b3559dfc7ba1912a8e9866))
 * Update VERSION.json ([91677f8](https://github.com/AMCOIndustries/pyscan/commit/91677f8d0f51821dfdea19d9941ca2f275a11914))
 
 
