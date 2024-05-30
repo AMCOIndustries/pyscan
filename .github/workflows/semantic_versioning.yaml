@@ -1,5 +1,5 @@
 # This workflow will auto-version when pull-requests are merged to main.
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+# For syntax on conventional change log, see https://github.com/TriPSs/conventional-changelog-action
 
 name: Semantic Versioning and Change Log
 
