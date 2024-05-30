@@ -1,6 +1,6 @@
 # Pyscan
 
-Python scientific measurement toolbox, changed, again, again, again, changes, turn and face the strange, change, change
+Python scientific measurement toolbox, changed, again, again, again, changes, turn and face the strange, change, change, change
 ## Intro
 
 Pyscan is an instrument control and measurement tool box for scientific laboratory instruments.
