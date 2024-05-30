@@ -5,8 +5,7 @@ name: Semantic Versioning and Change Log
 
 on:
   workflow_dispatch:
-  pull_request_target:
-    types: [opened, reopened, synchronize]
+  push:
     branches:
       - main
 
