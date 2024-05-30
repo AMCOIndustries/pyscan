@@ -40,16 +40,20 @@ jobs:
       uses: TriPSs/conventional-changelog-action@v5.2.1
       with:
         github-token: ${{ secrets.AMM }}
+        git-user-name: 'Awesome Changelog Action'
+        git-user-email: 'awesome_changelog@github.actions.com'
+        preset: 'angular'
+        tag-prefix: 'v'
         version-file: "VERSION.json"
-        release-count: '30'
+        # release-count: '30'
         git-branch: ${{ github.event.pull_request.head.ref }}
 
-    # this shouldn't need your token, but might as well include here instead of github_token as well.
-    - name: Create Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.AMM }}
-      with:
-        tag_name: ${{ steps.changelog.outputs.tag }}
-        release_name: ${{ steps.changelog.outputs.tag }}
-        body: ${{ steps.changelog.outputs.clean_changelog }}
+    # # this shouldn't need your token, but might as well include here instead of github_token as well.
+    # - name: Create Release
+    #   uses: actions/create-release@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.AMM }}
+    #   with:
+    #     tag_name: ${{ steps.changelog.outputs.tag }}
+    #     release_name: ${{ steps.changelog.outputs.tag }}
+    #     body: ${{ steps.changelog.outputs.clean_changelog }}
